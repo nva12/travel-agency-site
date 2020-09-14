@@ -40,4 +40,8 @@
   &--mb-large {
     margin-bottom: 1.6em;
   }
+
+  &--no-mt {
+    margin-top: 0;
+  }
 }
