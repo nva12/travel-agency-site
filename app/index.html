@@ -115,12 +115,13 @@
         <div class="wrapper wrapper--medium wrapper--mb">
           <img
             sizes="(min-width: 970px) 976px, 100vw"
-            srcset="
+            data-srcset="
               assets/images/first-trip-low-res.jpg  565w,
               assets/images/first-trip.jpg          976w,
               assets/images/first-trip-hi-dpi.jpg  1952w
             "
             alt="Couple walking down a street."
+            class="lazyload"
           />
         </div>
         <div class="row row--gutters">
@@ -128,26 +129,29 @@
             <picture>
               <source
                 sizes="404px"
-                srcset="
+                data-srcset="
                   assets/images/our-start.jpg        404w,
                   assets/images/our-start-hi-dpi.jpg 808w
                 "
                 media="(min-width: 1200px)"
+                class="lazyload"
               />
               <source
                 sizes="320px"
-                srcset="
+                data-srcset="
                   assets/images/our-start-portrait.jpg        382w,
                   assets/images/our-start-portrait-hi-dpi.jpg 764w
                 "
                 media="(min-width: 800px)"
+                class="lazyload"
               />
               <img
-                srcset="
+                data-srcset="
                   assets/images/our-start-landscape.jpg         800w,
                   assets/images/our-start-landscape-hi-dpi.jpg 1600w
                 "
                 alt="Our founder, Jane Doe"
+                class="lazyload"
               />
             </picture>
           </div>
@@ -285,11 +289,12 @@
               <div class="testimonial__photo">
                 <img
                   sizes="160px"
-                  srcset="
+                  data-srcset="
                     assets/images/testimonial-jane.jpg        160w,
                     assets/images/testimonial-jane-hi-dpi.jpg 320w
                   "
                   alt="Jane Doe"
+                  class="lazyload"
                 />
               </div>
               <h3 class="testimonial__title">Jane Doe</h3>
@@ -311,6 +316,7 @@
                 <img
                   src="assets/images/testimonial-john.jpg"
                   alt="John Smith"
+                  class="lazyload"
                 />
               </div>
               <h3 class="testimonial__title">John Smith</h3>
@@ -331,6 +337,7 @@
                 <img
                   src="assets/images/testimonial-cat.jpg"
                   alt="Cat McKitty"
+                  class="lazyload"
                 />
               </div>
               <h3 class="testimonial__title">Cat McKitty</h3>
